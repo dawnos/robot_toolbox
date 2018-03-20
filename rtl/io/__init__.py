@@ -9,3 +9,9 @@ def aread(filename, dtype=np.uint8, shape=None, transpose=False):
   if transpose:
     arr = arr.transpose()
   return arr
+
+
+def awrite(arr, filename, dtype=np.uint8, transpose=False):
+  if transpose:
+    arr = arr.transpose()
+  arr.tofile(filename)
