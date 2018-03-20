@@ -1,2 +1,2 @@
 # robot_toolbox
-Some matlab scripts for robotics.
+Some scripts for robotics(in matlab, python, etc.).
