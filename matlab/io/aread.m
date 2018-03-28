@@ -6,5 +6,7 @@ end
 
 fid = fopen(filename, 'r');
 % B = permute(A, ndims(A):-1:1);
-A = fread(fid, size, precision);
+A = fread(fid, prod(size), precision);
 fclose(fid);
+
+A = reshape(A, size);
